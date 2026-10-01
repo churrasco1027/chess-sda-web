@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chess SDA - Autenticación</title>
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-left">
+      <div class="auth-branding">
+        <div class="branding-icon">♟</div>
+        <h1>Chess SDA</h1>
+        <p class="quote">"El ajedrez es el juego de reyes"</p>
+      </div>
+
+      <div class="auth-features">
+        <div class="feature-item"><span class="feature-icon">🎮</span><p>Jugar online</p></div>
+        <div class="feature-item"><span class="feature-icon">🤖</span><p>Entrenamiento con bots</p></div>
+        <div class="feature-item"><span class="feature-icon">📚</span><p>Aperturas del ajedrez</p></div>
+        <div class="feature-item"><span class="feature-icon">🏆</span><p>Top mundial</p></div>
+      </div>
+    </div>
+
+    <div class="auth-right">
+      <div class="auth-forms">
+        <div id="loginForm" class="auth-form active">
+          <h2>Inicia sesión</h2>
+          <p class="auth-subtitle">Bienvenido de nuevo</p>
+
+          <div class="form-group">
+            <label for="loginEmail">Correo electrónico</label>
+            <input id="loginEmail" type="email" placeholder="tu@correo.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="loginPassword">Contraseña</label>
+            <input id="loginPassword" type="password" placeholder="••••••••" />
+          </div>
+
+          <div class="remember-forgot">
+            <label class="checkbox"><input type="checkbox" /> Recuérdame</label>
+            <a href="#">¿Olvidaste la contraseña?</a>
+          </div>
+
+          <button class="btn btn-primary" id="loginBtn">Iniciar sesión</button>
+
+          <div class="divider"><span>O continúa con</span></div>
+
+          <div class="social-login">
+            <button class="btn btn-social" type="button">🔵 Google</button>
+            <button class="btn btn-social" type="button">⬛ GitHub</button>
+          </div>
+
+          <p class="auth-toggle">
+            ¿No tienes cuenta?
+            <button id="switchToRegister" class="toggle-btn" type="button">Regístrate aquí</button>
+          </p>
+        </div>
+
+        <div id="registerForm" class="auth-form">
+          <h2>Crear cuenta</h2>
+          <p class="auth-subtitle">Únete a Chess SDA</p>
+
+          <div class="form-group">
+            <label for="registerUsername">Usuario</label>
+            <input id="registerUsername" type="text" placeholder="Ajedrecista_01" />
+          </div>
+
+          <div class="form-group">
+            <label for="registerEmail">Correo electrónico</label>
+            <input id="registerEmail" type="email" placeholder="tu@correo.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="registerPassword">Contraseña</label>
+            <input id="registerPassword" type="password" placeholder="••••••••" />
+          </div>
+
+          <div class="form-group">
+            <label for="registerPasswordConfirm">Confirmar contraseña</label>
+            <input id="registerPasswordConfirm" type="password" placeholder="••••••••" />
+          </div>
+
+          <div class="form-group">
+            <label for="registerCountry">País</label>
+            <select id="registerCountry">
+              <option value="">Selecciona tu país</option>
+              <option value="pe">🇵🇪 Perú</option>
+              <option value="mx">🇲🇽 México</option>
+              <option value="ar">🇦🇷 Argentina</option>
+              <option value="co">🇨🇴 Colombia</option>
+              <option value="es">🇪🇸 España</option>
+              <option value="us">🇺🇸 Estados Unidos</option>
+              <option value="br">🇧🇷 Brasil</option>
+              <option value="cl">🇨🇱 Chile</option>
+            </select>
+          </div>
+
+          <label class="checkbox">
+            <input id="registerTerms" type="checkbox" />
+            Acepto los términos
+          </label>
+
+          <button class="btn btn-primary" id="registerBtn">Crear cuenta</button>
+
+          <div class="divider"><span>O regístrate con</span></div>
+
+          <div class="social-login">
+            <button class="btn btn-social" type="button">🔵 Google</button>
+            <button class="btn btn-social" type="button">⬛ GitHub</button>
+          </div>
+
+          <p class="auth-toggle">
+            ¿Ya tienes cuenta?
+            <button id="switchToLogin" class="toggle-btn" type="button">Inicia sesión</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
